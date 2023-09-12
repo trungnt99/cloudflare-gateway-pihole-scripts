@@ -1,3 +1,13 @@
+name: Update Filter Lists
+
+on:
+  schedule:
+    - cron: "0 21 * * *"
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
+
 jobs:
   cgps:
     runs-on: ubuntu-latest
